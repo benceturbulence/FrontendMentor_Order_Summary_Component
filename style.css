@@ -1,0 +1,139 @@
+
+:root {
+    --pale-blue: hsl(225,100%, 94%);
+    --bright-blue: hsl(245, 75%, 52%);
+    --very-pale-blue: hsl(225, 100%, 98%);
+    --desaturated-blue: hsl(224, 23%, 55%);
+    --dark-blue: hsl(223, 47%, 23%);
+    font-size: 16px
+}   
+
+* {
+padding: 0;
+margin: 0;
+box-sizing: border-box;
+}
+
+
+body {
+    font-family: 'Red Hat Display', sans-serif;
+    text-align: center;
+    background-color: var(--very-pale-blue);
+    background: url('images/pattern-background-desktop.svg');
+    background-position: center;
+    background-position-x: left;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
+img {
+    width: 100%;
+    object-fit: cover;
+}
+
+
+
+/* typography */
+
+
+h1 {
+    font-size: 24px;
+    font-weight: 900;
+}
+
+p {
+    font-size: 0.865rem;
+    
+    color: var(--desaturated-blue);
+    font-weight: 500;
+}
+
+
+/* layout */
+
+.card {
+    width: 350px;
+    margin: 10vh auto;
+}
+
+
+.card_content {
+    padding: 2rem;
+    margin: 0;
+    background-color: #fff;
+}
+
+.plan {
+    background-color: var(--very-pale-blue);
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    padding: .5rem;
+    border-radius: 12px;
+    margin-bottom: 2rem;
+}
+
+.plan_offer {
+    margin-left: 1rem;
+}
+
+.plan_change {
+    margin-left: auto;
+    margin-right: .4rem;
+    color: var(--bright-blue);
+    font-size: .75rem;
+    font-weight: 700;
+}
+
+
+.plan_offer h2 {
+    font-size: 0.865rem;
+    margin-bottom: .5rem;
+    font-weight: 900;
+}
+
+
+.card_content h1+p {
+    padding: 1.4rem 0;
+}
+
+.btn {
+    cursor: pointer;
+    font-family: 'Red Hat Display', sans-serif;
+    width: 100%;
+    padding: .8rem;
+    background: none;
+    border: none;
+    font-size: .8rem;
+    font-weight: 900;
+    word-spacing: 2px;
+    color: var(--desaturated-blue);
+}
+
+.btn-accent {
+    background-color: --bright-blue;
+    color: #fff;
+    border: 0;
+    border-radius: 0.5rem;
+    font-size: .75rem;
+    font-weight: 900;
+    word-spacing: 2px;
+    margin-bottom: 1rem;
+    background-color: var(--bright-blue);
+}
+
+.card_top,
+img {
+    border-top-left-radius: 18px;
+    border-top-right-radius: 18px;
+}
+
+.card_top {
+    background-color: #fff;
+}
+
+.card_content {
+    border-bottom-left-radius: 18px;
+    border-bottom-right-radius: 18px;
+}
